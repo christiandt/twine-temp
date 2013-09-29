@@ -7,4 +7,4 @@ Your Twine needs to be publically available for this code to work. On the twine 
 
     https://twine.cc/0000000aa1bbb2cc/widget/?access_key=111111a2222b3ccc333333d444ee
 
-The first part after "twine.cc/" is your Twine's ID. The numbers and letters after "access_key=" is your access key. Substitute these in the code, and everything should work.
+The numbers and letters after "twine.cc/" is your Twine's ID. The numbers and letters after "access_key=" is your access key. Substitute these in the code, and everything should work.
