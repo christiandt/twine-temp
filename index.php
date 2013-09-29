@@ -5,10 +5,10 @@
 	$access_key = "111111a2222b333c444444d555ee";
 
 	$url = "https://twine.cc/" . $twine_id . "/rt?cached=1&access_key=" . $access_key;
-	$str = json_decode(file_get_contents($url));
+	$data = json_decode(file_get_contents($url));
 
-	$update = floor(($str->age)/60);
-	$temp_fahrenheit = (double) ($str->values[1][1])/100;
+	$update_time = floor(($data->age)/60);
+	$temp_fahrenheit = (double) ($data->values[1][1])/100;
 	$temp_celsius = round(($temp_fahrenheit-32)*5/9);
 ?>
 
@@ -42,7 +42,7 @@
 	</div>
 
 	<div class="update">
-		<?php echo $update . " min ago" ?>
+		<?php echo $update_time . " min ago" ?>
 	</div>
 </body>
 </html>
